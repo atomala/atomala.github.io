@@ -1,5 +1,5 @@
-# Empty
+# Personal Site
 
-A simple empty boilerplate for a fresh start
+My personal website
 
 Auto commited via [Mixture](http://mixture.io)
