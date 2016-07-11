@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% include navbar.html %}
+
+<div class="content container">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h3 itemprop="name headline">{{ page.title }}</h3>
+    <div class="divider"></div>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/blog.js"></script>

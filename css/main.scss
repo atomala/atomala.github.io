@@ -1,0 +1,151 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@media screen and (max-width: 370px){
+	.nav-wrapper .brand-logo {
+		font-size: 1.5rem;
+	}
+	.nav-wrapper .container {
+		  width:98%;
+	}
+}
+
+.navbar-fixed{
+  position: fixed !important;
+  top: 0;
+}
+
+#intro {
+  height:100vh;
+  width: 100%;
+  background-image: linear-gradient(120deg,#273379,#4054c4,#619cff);
+  display: table;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#intro .text-container {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+  color: #FFFFFF;
+  font-size: 3rem;
+  z-index: 2;
+  -webkit-animation: bounceInLeft 1.0s;
+  -moz-animation: bounceInLeft 1.0s;
+  -ms-animation: bounceInLeft 1.0s;
+  -o-animation: bounceInLeft 1.0s;
+  animation: bounceInLeft 1.0s;
+}
+
+#intro .overlay {
+  background: transparent url("../images/overlay.png");
+  opacity: 0.5;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+#about-me .img-profile {
+	width:100%;
+  max-width: 300px;
+  height: auto;
+  margin: 2em auto 2em auto;
+}
+
+#about-me .btn-large {
+	margin: 1.2em auto 0 auto;
+}
+
+.button-container > .btn{
+	padding: 0 10px;
+	 margin: 3px;
+	 box-shadow: none;
+}
+
+#computer-stuff h4 {
+	margin: 30px 0 15px 0;
+}
+
+#computer-stuff .card-title{
+	color: #777;
+	line-height: 1.5em;
+}
+
+#computer-stuff .card-action a{
+	color: #33B5E5;
+}
+
+.button-container  > .btn-large{
+	padding: 0 20px;
+	margin: 10px;
+	box-shadow: none;
+}
+
+body{
+	background-color: #EFEFEF;
+}
+
+.small-text {
+	font-size: 0.5em;
+}
+
+.content {
+	padding-top: 64px;
+}
+
+.collection {
+  background-color: #33B5E5;
+  color: #FFFFFF;
+}
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #EFEFEF;
+$brand-color:      #33B5E5;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
