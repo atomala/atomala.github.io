@@ -1,5 +1,3 @@
----
----
 // The MIT License (MIT)
 //
 // Copyright (c) 2015-2019 Yegor Bugayenko
@@ -22,74 +20,64 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-@import 'roboto';
 @import 'defs';
-@import 'tables';
-@import 'forms';
-@import 'pre';
-@import 'headings';
-@import 'typography';
-@import 'grid';
-@import 'responsive';
 
-body {
-  height:100%;
-  width: 100%;
-}
-
-.social a {
-  color: $gray;
-  padding: 0 2px 0 2px;
-}
-
-#top-name {
-  font-size: 15pt;
-  color: #333;
-  font-weight: 500;
-}
-
-#top-resume {
-  font-size: 11pt;
-  color: $gray;
-}
-
-#top-resume:hover {
-  color: $black;
-}
-
-a:hover {
+a {
+  color: $blue;
   text-decoration: none;
-  color: #0d47a1;
-}
 
-.outer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height:100%;
-  width:100%;
-}
-
-.inner-container {
-  max-width: 800px;
-  padding: 0 40px 0 40px;
-}
-
-.top {
-  padding: 0 0 40px 0;
-}
-
-#top-name {
-}
-
-#top-resume {
-}
-
-@media (max-width: $mobile-width) {
-  .inner-container {
-    max-width: 800px;
-    padding: 0 20px 0 20px;
+  &:hover {
+    text-decoration: underline;
   }
 }
 
+hr {
+  border-bottom: 1px solid $gray;
+}
+
+figcaption,
+small {
+  font-size: .85 * $em;
+}
+
+figcaption {
+  color: $gray;
+}
+
+var,
+em,
+i {
+  font-style: italic;
+}
+
+dt,
+strong,
+b {
+  font-weight: 600;
+}
+
+del,
+s {
+  text-decoration: line-through;
+}
+
+ins,
+u {
+  text-decoration: underline;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}

@@ -6,10 +6,10 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://atomala.com" # the base hostname & protocol for your site
 
-collections:
-  posts:
-    permalink: /blog/:title/
-    output: true
+#collections:
+#  posts:
+#    permalink: /blog/:title/
+#    output: true
 
 # Build settings
 markdown: kramdown
